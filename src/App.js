@@ -2,17 +2,19 @@ import './App.css';
 import {Route, Switch, Link} from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
+import {AppBar, Button, IconButton, Toolbar, Typography} from "@material-ui/core";
+import {classes} from "istanbul-lib-coverage";
 
 function App() {
   return (
       <div>
-        <nav>
-          <ul id="navigation">
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
+          <AppBar position="static">
+              <Toolbar>
+                  <Typography variant="h6" className={classes.title}>
+                      <Link to="/about">About</Link>
+                  </Typography>
+              </Toolbar>
+          </AppBar>
           <Switch>
               <Route exact path="/">
                   <Home/>
