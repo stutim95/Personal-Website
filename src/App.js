@@ -8,10 +8,9 @@ function App() {
   return (
       <div>
           <AppBar position="static">
-              Stuti Misra 
               <Toolbar variant="dense">
                   <Typography variant="h6" color="inherit">
-                      <Link to="/about">About</Link>
+                      Stuti Misra
                   </Typography>
               </Toolbar>
           </AppBar>
